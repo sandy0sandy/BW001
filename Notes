@@ -241,6 +241,103 @@ To https://github.com/sandy0sandy/LocalRepo01.git
 """
 
 
+>>> Branching 
+
+"""
+PS Y:\GitDemo\01LocalRepo> git checkout -b f1
+Switched to a new branch 'f1'
+* f1
+  main
+PS Y:\GitDemo\01LocalRepo> git checkout main
+Your branch is up to date with 'origin/main'.
+  f1
+* main
+PS Y:\GitDemo\01LocalRepo> git checkout -b f2 
+Switched to a new branch 'f2'
+PS Y:\GitDemo\01LocalRepo> git checkout main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS Y:\GitDemo\01LocalRepo> git branch 
+  f1
+  f2
+* main
+PS Y:\GitDemo\01LocalRepo> git branch -d f2
+Deleted branch f2 (was 94dca08).
+PS Y:\GitDemo\01LocalRepo> git branch 
+  f1
+* main
+"""
+
+"""
+PS Y:\GitDemo\01LocalRepo> git checkout -b f1
+Switched to a new branch 'f1'
+* f1
+  main
+PS Y:\GitDemo\01LocalRepo> git checkout main
+Your branch is up to date with 'origin/main'.
+  f1
+* main
+PS Y:\GitDemo\01LocalRepo> git checkout -b f2
+Switched to a new branch 'f2'
+PS Y:\GitDemo\01LocalRepo> git branch 
+  f1
+  f2
+* main
+PS Y:\GitDemo\01LocalRepo> git add.
+git: 'add.' is not a git command. See 'git --help'.
+The most similar command is
+        add
+PS Y:\GitDemo\01LocalRepo> git add . 
+PS Y:\GitDemo\01LocalRepo> git add.
+
+        add
+PS Y:\GitDemo\01LocalRepo> git add . 
+PS Y:\GitDemo\01LocalRepo> git commit -m "Adding new Branch"
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+PS Y:\GitDemo\01LocalRepo> git status 
+On branch f1
+nothing to commit, working tree clean
+PS Y:\GitDemo\01LocalRepo> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS Y:\GitDemo\01LocalRepo> git checkout f1  
+Switched to branch 'f1'
+PS Y:\GitDemo\01LocalRepo>  git branch 
+* f1
+  f2
+  main
+PS Y:\GitDemo\01LocalRepo> git push origin f1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 170.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'f1' on GitHub by visiting:
+remote:      https://github.com/sandy0sandy/LocalRepo01/pull/new/f1      
+remote:
+To https://github.com/sandy0sandy/LocalRepo01.git
+ * [new branch]      f1 -> f1
+"""
+
+>> puu request
+"""
+PS Y:\GitDemo\01LocalRepo> git pull origin main 
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)    
+Unpacking objects: 100% (1/1), 892 bytes | 2.00 KiB/s, done.
+From https://github.com/sandy0sandy/LocalRepo01
+ * branch            main       -> FETCH_HEAD
+   94dca08..6724dad  main       -> origin/main
+Updating 94dca08..6724dad
+Fast-forward
+ README.md | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+"""
+ 
+
 
 
 
