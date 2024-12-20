@@ -1,0 +1,60 @@
+it means git also accesseble from vs code as well
+
+"" 
+cloning code 
+PS Y:\GitDemo> git clone https://github.com/sandy0sandy/BW001.git
+Cloning into 'BW001'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)    
+Receiving objects: 100% (9/9), done.
+PS Y:\GitDemo> 
+""
+
+
+""
+to change directrory 
+cd
+PS Y:\GitDemo> cd 
+PS Y:\GitDemo> cd .\BW001\ 
+""
+>> to select folder after cd simply press ttab button 
+
+""
+clear    >> to clear screen  
+""
+
+""
+ls    >> to show  folder  
+""
+
+""
+ls -h >> to show hdden folder aswell 
+""
+
+
+""
+git status
+""
+
+
+>> after changing in code you have to commit it else it shows error /untracked status code on git 
+"""
+PS Y:\GitDemo\BW001> git status 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")      
+PS Y:\GitDemo\BW001> 
+""" 
+
+
+
+
+
